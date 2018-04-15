@@ -15,8 +15,11 @@ def add_item(title, price, quantity = 1)
   @total += price
 end
 
-def apply_discount
-  
+def apply_discount(discount)
+  @total * discount
+  puts "After the discount, the total comes to #{@total}."
+end
+
 
 
 
